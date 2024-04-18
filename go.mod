@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // SPDX-License-Identifier: FS-0.9-or-later
 
-module github.com/kaack/elrs-joystick-control
+module github.com/niksprv/elrs-joystick-control
 
 go 1.20
 

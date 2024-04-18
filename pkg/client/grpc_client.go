@@ -9,7 +9,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/golang/protobuf/jsonpb"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/structpb"

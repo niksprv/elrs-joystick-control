@@ -5,8 +5,8 @@
 package config
 
 import (
-	"github.com/kaack/elrs-joystick-control/pkg/devices"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	"github.com/niksprv/elrs-joystick-control/pkg/devices"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 )
 
 type HatT struct {

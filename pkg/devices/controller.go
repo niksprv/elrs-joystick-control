@@ -7,7 +7,7 @@ package devices
 import (
 	"fmt"
 	"github.com/dlsniper/debugger"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 	"github.com/veandco/go-sdl2/sdl"
 	"gopkg.in/tomb.v2"
 )

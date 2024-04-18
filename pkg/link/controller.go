@@ -7,12 +7,12 @@ package link
 import (
 	"errors"
 	"fmt"
-	cc "github.com/kaack/elrs-joystick-control/pkg/config"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire/settings"
-	dc "github.com/kaack/elrs-joystick-control/pkg/devices"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
-	sc "github.com/kaack/elrs-joystick-control/pkg/serial"
+	cc "github.com/niksprv/elrs-joystick-control/pkg/config"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire/settings"
+	dc "github.com/niksprv/elrs-joystick-control/pkg/devices"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
+	sc "github.com/niksprv/elrs-joystick-control/pkg/serial"
 	"gopkg.in/tomb.v2"
 	"time"
 )

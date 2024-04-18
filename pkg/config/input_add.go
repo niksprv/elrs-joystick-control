@@ -4,7 +4,7 @@
 
 package config
 
-import "github.com/kaack/elrs-joystick-control/pkg/util"
+import "github.com/niksprv/elrs-joystick-control/pkg/util"
 
 type AddT struct {
 	RightDefault *util.RawValue `json:"right_default"`

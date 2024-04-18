@@ -6,8 +6,8 @@ package telemetry
 
 import (
 	"encoding/binary"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 )
 
 func isTelemetryAddress(c crossfire.Endpoint) bool {

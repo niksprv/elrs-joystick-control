@@ -373,7 +373,7 @@ steps to build the application:
 
 * Clone this repo to your local machine
   ```
-  git clone https://github.com/kaack/elrs-joystick-control.git
+  git clone https://github.com/niksprv/elrs-joystick-control.git
   ```
 
 
@@ -417,7 +417,7 @@ steps to build the application:
 
 * Clone this repo to your local machine
   ```
-  git clone https://github.com/kaack/elrs-joystick-control.git
+  git clone https://github.com/niksprv/elrs-joystick-control.git
   ```
 
 
@@ -462,7 +462,7 @@ steps to build the application:
 
 * From a new terminal, clone this repo 
   ```
-  git clone https://github.com/kaack/elrs-joystick-control.git
+  git clone https://github.com/niksprv/elrs-joystick-control.git
   ```
   
 * Switch to the repo directory, and run build script

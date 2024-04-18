@@ -8,7 +8,7 @@ import "google/protobuf/struct.proto";
 
 package JoystickControl;
 
-option go_package = "github.com/kaack/elrs-joystick-control/pkg/server/pb";
+option go_package = "github.com/niksprv/elrs-joystick-control/pkg/server/pb";
 
 message Empty {}
 

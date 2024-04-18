@@ -7,10 +7,10 @@ package link
 import (
 	"errors"
 	"fmt"
-	crsf "github.com/kaack/elrs-joystick-control/pkg/crossfire"
-	telem "github.com/kaack/elrs-joystick-control/pkg/crossfire/telemetry"
-	"github.com/kaack/elrs-joystick-control/pkg/serial"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	crsf "github.com/niksprv/elrs-joystick-control/pkg/crossfire"
+	telem "github.com/niksprv/elrs-joystick-control/pkg/crossfire/telemetry"
+	"github.com/niksprv/elrs-joystick-control/pkg/serial"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 	"gopkg.in/tomb.v2"
 	"time"
 )

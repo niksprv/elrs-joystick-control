@@ -6,8 +6,8 @@ package server
 
 import (
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/devices"
-	pb2 "github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/devices"
+	pb2 "github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

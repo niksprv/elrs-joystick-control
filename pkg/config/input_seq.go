@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 	"sync"
 	"time"
 )

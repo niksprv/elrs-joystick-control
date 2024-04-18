@@ -7,7 +7,7 @@ package config
 import (
 	"errors"
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 	"golang.org/x/exp/maps"
 	"gopkg.in/tomb.v2"
 )

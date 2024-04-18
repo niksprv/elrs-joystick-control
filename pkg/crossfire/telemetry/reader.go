@@ -7,9 +7,9 @@ package telemetry
 import (
 	"errors"
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/crc"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire"
-	"github.com/kaack/elrs-joystick-control/pkg/serial"
+	"github.com/niksprv/elrs-joystick-control/pkg/crc"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire"
+	"github.com/niksprv/elrs-joystick-control/pkg/serial"
 	"golang.org/x/exp/slices"
 	"gopkg.in/tomb.v2"
 	"io"

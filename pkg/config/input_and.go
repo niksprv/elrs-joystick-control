@@ -4,7 +4,7 @@
 
 package config
 
-import "github.com/kaack/elrs-joystick-control/pkg/util"
+import "github.com/niksprv/elrs-joystick-control/pkg/util"
 
 type AndT struct {
 	OutputFalse *util.RawValue `json:"output_false"`

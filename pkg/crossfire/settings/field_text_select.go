@@ -7,8 +7,8 @@ package settings
 import (
 	"bytes"
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire/telemetry"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire/telemetry"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 	"strings"
 )
 

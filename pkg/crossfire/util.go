@@ -5,8 +5,8 @@
 package crossfire
 
 import (
-	"github.com/kaack/elrs-joystick-control/pkg/crc"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	"github.com/niksprv/elrs-joystick-control/pkg/crc"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 	"time"
 )
 

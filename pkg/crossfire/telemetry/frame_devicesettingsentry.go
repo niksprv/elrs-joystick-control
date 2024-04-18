@@ -6,8 +6,8 @@ package telemetry
 
 import (
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 )
 
 type TelemDeviceSettingsEntryExtType interface {

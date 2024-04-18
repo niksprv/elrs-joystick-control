@@ -6,8 +6,8 @@ package config
 
 import (
 	_ "embed"
-	"github.com/kaack/elrs-joystick-control/pkg/devices"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	"github.com/niksprv/elrs-joystick-control/pkg/devices"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 )
 
 type Config struct {

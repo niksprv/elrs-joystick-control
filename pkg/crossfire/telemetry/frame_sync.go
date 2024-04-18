@@ -7,8 +7,8 @@ package telemetry
 import (
 	"encoding/binary"
 	"fmt"
-	"github.com/kaack/elrs-joystick-control/pkg/crossfire"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/crossfire"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 	"time"
 )
 

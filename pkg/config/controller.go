@@ -8,9 +8,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	dc "github.com/kaack/elrs-joystick-control/pkg/devices"
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
-	"github.com/kaack/elrs-joystick-control/pkg/util"
+	dc "github.com/niksprv/elrs-joystick-control/pkg/devices"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/util"
 	"gopkg.in/tomb.v2"
 )
 

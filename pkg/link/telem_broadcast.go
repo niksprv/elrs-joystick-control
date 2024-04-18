@@ -5,7 +5,7 @@
 package link
 
 import (
-	"github.com/kaack/elrs-joystick-control/pkg/proto/generated/pb"
+	"github.com/niksprv/elrs-joystick-control/pkg/proto/generated/pb"
 	"sync"
 )
 

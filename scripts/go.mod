@@ -1,4 +1,4 @@
-module github.com/kaack/elrs-joystick-control/scripts
+module github.com/niksprv/elrs-joystick-control/scripts
 
 go 1.20
 

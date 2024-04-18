@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/improbable-eng/grpc-web/go/grpcweb"
-	"github.com/kaack/elrs-joystick-control/webapp"
+	"github.com/niksprv/elrs-joystick-control/webapp"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/ttys3/echo-pprof/v4"
