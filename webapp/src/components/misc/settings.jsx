@@ -33,6 +33,22 @@ export const getServerUrl = () => {
     return sanitizeUrl(window.location.href);
 }
 
+export const getGamepadUrl = () => {
+    const queryParams = new URLSearchParams(window.location.search);
+    let savedGamepadUrl = storageGet("gamepadUrl");
+    let queryGamepadUrl = queryParams.get("gamepadUrl");
+
+    if (queryGamepadUrl && queryGamepadUrl !== "") {
+        return sanitizeUrl(queryGamepadUrl);
+    }
+
+    if (savedGamepadUrl && savedGamepadUrl !== "") {
+        return sanitizeUrl(savedGamepadUrl);
+    }
+
+    return sanitizeUrl(window.location.href);
+}
+
 export function isMockBackend() {
     const queryParams = new URLSearchParams(window.location.search);
     let savedMockBackend = storageGet(MOCK_BACKEND_KEY);

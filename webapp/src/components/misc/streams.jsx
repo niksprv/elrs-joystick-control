@@ -4,8 +4,8 @@
 
 import {StatusCode} from "grpc-web";
 import {Empty, GetGamepadStreamReq, GetTransmitterStreamReq, Telemetry} from "../../pbwrap";
-import {getServerUrl} from "./settings";
-import {getClient} from "./server";
+import {getServerUrl, getGamepadUrl} from "./settings";
+import {getClient, getGamepadClient} from "./server";
 
 
 export const getTransmitterStream = async function (transmitter) {
@@ -16,7 +16,7 @@ export const getTransmitterStream = async function (transmitter) {
 };
 
 export const getGamepadStream = async function (gamepad) {
-    let client = getClient(getServerUrl(), null, null);
+    let client = getGamepadClient(getGamepadUrl(), null, null);
     let req = new GetGamepadStreamReq();
     req.setGamepad(gamepad);
 

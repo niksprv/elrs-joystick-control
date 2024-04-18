@@ -13,7 +13,7 @@ import {
 import {isLocalStorageActive, storageSet} from "../misc/storage";
 import i18n from "../misc/I18n";
 import SettingsIcon from "@mui/icons-material/Settings";
-import {getServerUrl, isMockBackend, MOCK_BACKEND_KEY, USE_LOCAL_STORAGE_KEY} from "../misc/settings";
+import {getServerUrl, getGamepadUrl, isMockBackend, MOCK_BACKEND_KEY, USE_LOCAL_STORAGE_KEY} from "../misc/settings";
 
 const SettingsCard = function({label, children}) {
     return <Card elevation={1} style={{
@@ -39,6 +39,7 @@ export default function SettingsPage({}) {
 
     const [fullScreen, setFullScreen] = React.useState(!!document.fullscreenElement);
     const [serverUrl, setServerUrl] = useState(getServerUrl());
+    const [gamepadUrl, setGamepadUrl] = useState(getGamepadUrl());
     const [useLocalStorage, setUseLocalStorage] = useState(isLocalStorageActive())
     const [mockBackend, setMockBackend] = useState(isMockBackend())
 
@@ -87,6 +88,12 @@ export default function SettingsPage({}) {
         storageSet("serverUrl", serverUrl);
     }, null);
 
+    const handleGamepadUrl = useCallback(function(e) {
+        let gamepadUrl = e.target.value;
+        setGamepadUrl(gamepadUrl);
+        storageSet("gamepadUrl", gamepadUrl);
+    }, null);
+
     return (
         <>
             <SettingsCard label={"Display"}>
@@ -111,6 +118,14 @@ export default function SettingsPage({}) {
                     value={serverUrl || ''}
                     onChange={handleServerUrl}
                     label={"Server URL"}
+                    style={{marginTop: "10px", width: "100%", backgroundColor: "white"}}/>
+            </SettingsCard> }
+
+            {!mockBackend && <SettingsCard label={"Gamepad url"}>
+                <TextField
+                    value={gamepadUrl || ''}
+                    onChange={handleGamepadUrl}
+                    label={"Gamepad url"}
                     style={{marginTop: "10px", width: "100%", backgroundColor: "white"}}/>
             </SettingsCard> }
 

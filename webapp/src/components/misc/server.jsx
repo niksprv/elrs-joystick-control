@@ -5,7 +5,7 @@
 
 import {JoystickControlPromiseClient} from "../../generated/server_grpc_web_pb";
 import {Empty, GetCRSFDeviceFieldsReq, SetConfigReq, SetCRSFDeviceFieldReq, StartLinkReq, Struct} from "../../pbwrap";
-import {getServerUrl, isMockBackend} from "./settings";
+import {getServerUrl, getGamepadUrl, isMockBackend} from "./settings";
 import * as mock from "../mock/JoystickControlPromiseClient"
 
 export const getClient = function (serverUrl, credentials, options) {
@@ -17,8 +17,17 @@ export const getClient = function (serverUrl, credentials, options) {
     return new JoystickControlPromiseClient(getServerUrl(), credentials, options);
 };
 
+export const getGamepadClient = function (gamepadUrl, credentials, options) {
+    if (isMockBackend()) {
+        //for demos, where there is no backend
+        return new mock.JoystickControlPromiseClient(gamepadUrl, credentials, options)
+    }
+
+    return new JoystickControlPromiseClient(getGamepadUrl(), credentials, options);
+};
+
 export const getGamepads = async function () {
-    let client = getClient(getServerUrl(), null, null);
+    let client = getGamepadClient(getGamepadUrl(), null, null);
     let res = await client.getGamepads(new Empty(), {});
 
     // noinspection JSUnresolvedReference
